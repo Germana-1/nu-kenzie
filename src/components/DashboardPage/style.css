@@ -1,0 +1,115 @@
+.DashboardPage {
+  text-align: center;
+}
+
+.DashboardPage-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 15%;
+  height: 88px;
+  margin-bottom: 40px;
+  box-shadow: 0px 4px 32px -12px rgba(0, 0, 0, 0.25);
+}
+
+.DashboardPage-logo {
+  height: 20px;
+  pointer-events: none;
+}
+
+.DashboardPage-main {
+  padding: 0 15%;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.DashboardPage-container-form {
+  width: 40%;
+  max-width: 363px;
+  min-width: 300px;
+}
+
+.DashboardPage-container-list {
+  width: 60%;
+  max-width: 562px;
+}
+
+.DashboardPage-container-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.DashboardPage-container-nav h2 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #212529;
+}
+
+.DashboardPage-container-nav nav {
+  display: flex;
+  gap: 10px;
+}
+
+.DashboardPage-container-list img {
+  width: 100%;
+  height: 89px;
+  margin-bottom: 33px;
+}
+
+button {
+  color: var(--color-grey-4);
+  background-color: var(--color-grey-2);
+  padding: 10px;
+  height: 40px;
+  border: 1.4px solid var(--color-grey-2);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 1.4px solid var(--color-grey-4);
+  background: var(--color-grey-4);
+  color: var(--color-grey-1);
+}
+
+button:focus {
+  border: 1.4px solid var(--color-primary);
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .DashboardPage-main {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .DashboardPage-container-form {
+    width: 100%;
+    max-width: 100%;
+  }
+  .DashboardPage-container-list {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .DashboardPage-container-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .DashboardPage-container-nav nav {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .DashboardPage-container-list img {
+    height: fit-content;
+    margin-bottom: 10px;
+  }
+}

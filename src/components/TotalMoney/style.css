@@ -1,0 +1,30 @@
+.TotalMoney-container {
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  height: 96px;
+  margin-top: 16px;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.TotalMoney-container h3 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #212529;
+}
+
+.TotalMoney-container p {
+  font-weight: 400;
+  font-size: 12px;
+  color: #343a40;
+  position: absolute;
+  bottom: 20px;
+}
+
+.TotalMoney-container span {
+  font-weight: 700;
+  font-size: 16px;
+  color: #fd377e;
+}

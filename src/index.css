@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #fd377e;
+  --color-primary-1: #e34981;
+  --color-secondary: #03b898;
+  --color-grey-1: #f8f9fa;
+  --color-grey-2: #e9ecef;
+  --color-grey-3: #868e96;
+  --color-grey-4: #343a40;
+  --color-grey-5: #212529;
+  --color-white: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

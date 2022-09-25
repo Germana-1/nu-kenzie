@@ -1,0 +1,80 @@
+.Form {
+  border: 1px solid var(--color-primary);
+
+  /* height: 351px; */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 38px 24px;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+}
+
+.Form label {
+  font-weight: 400;
+  font-size: 12px;
+  color: #212529;
+  margin-bottom: 12px;
+}
+
+.Form-input {
+  border: 2px solid #f8f9fa;
+  border-radius: 8px;
+  background: #f8f9fa;
+  padding: 0px 16px;
+  height: 52px;
+  width: 100%;
+}
+
+.Form-input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  color: #868e96;
+}
+
+.Form p {
+  font-weight: 400;
+  font-size: 12px;
+  color: #868e96;
+  margin-bottom: 17px;
+}
+
+.Form > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Form > div div {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 19px;
+  position: relative;
+}
+
+.Form > div div span {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  color: #343a40;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.Form select {
+  font-weight: 400;
+  font-size: 12px;
+  color: #343a40;
+}
+
+.Form-button {
+  background: var(--color-primary);
+  color: var(--color-white);
+  height: 48px;
+}
+
+.Form-button:hover {
+  background: #e34981;
+  color: #f8f9fa;
+}
