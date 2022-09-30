@@ -4,6 +4,8 @@ import { useState } from "react";
 import { Form } from "../Form";
 import { List } from "../List";
 import { TotalMoney } from "../TotalMoney";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const DashboardPage = ({ setRenderDashboard, renderDashboard }) => {
   const [listTransactions, setListTransactions] = useState([]);
@@ -68,6 +70,7 @@ export const DashboardPage = ({ setRenderDashboard, renderDashboard }) => {
           />
         </div>
       </main>
+      <ToastContainer />
     </>
   );
 };

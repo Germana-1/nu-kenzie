@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 import "./style.css";
 
 export const Form = ({
@@ -15,10 +16,12 @@ export const Form = ({
   function handleSubmit(event) {
     event.preventDefault();
 
-    setListTransactions(() => [
-      ...listTransactions,
-      { description: description, type: type, value: treatedValue },
-    ]);
+    value < 0
+      ? toast.error('Insira um valor positivo no campo "Valor"')
+      : setListTransactions(() => [
+          ...listTransactions,
+          { description: description, type: type, value: treatedValue },
+        ]);
 
     setDescription("");
     setValue(0);
